@@ -130,10 +130,11 @@ nav a {
 
 button {
     border: 2px solid #CDCDCD;
-    border-radius: 100px;
+    border-radius: 50%;
     background-color: #FFFFFF;
     border-color: #FDDCC4;
-    ;
+    width: 52px;
+    height: 52px;
 }
 
 button p {

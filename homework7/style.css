@@ -23,10 +23,6 @@ header {
     z-index: 99;
 }
 
-main {
-    padding-bottom: 100px;
-}
-
 .flex-wrapper {
     display: flex;
     justify-content: space-between;
@@ -46,6 +42,7 @@ main {
     padding-top: 10px;
     letter-spacing: 0.1em;
     color: #FFFFFF;
+    filter: drop-shadow(3px 0 black);
 }
 
 nav ul {
@@ -70,11 +67,9 @@ nav a {
 }
 
 .people h1 {
-    width: 310px;
     font-weight: 400;
     font-size: 44px;
     color: #FFFFFF;
-    padding-top: 343px;
 }
 
 .people p {
@@ -82,19 +77,17 @@ nav a {
     font-weight: 400;
     font-size: 15px;
     color: #CDCDCD;
-    width: 460px;
     padding-top: 42px;
     padding-bottom: 56px;
 }
 
 .first {
     background: linear-gradient(90.26deg, #7D604B 0.23%, #251000 99.8%);
+    padding-top: 223px;
 }
 
 .puppy img {
     width: 698px;
-    height: 728px;
-    padding-top: 180px;
 }
 
 .make-friend {
@@ -123,14 +116,14 @@ nav a {
     height: 52px;
 }
 
-.about img {
-    width: 300px;
-    height: 408px;
-    margin: 80px 100px;
+.about {
+    padding-left: 175px;
 }
 
-section .one {
+section.one {
     background-color: white;
+    padding-top: 80px;
+    padding-bottom: 100px;
 }
 
 .about-shelter h1 {
@@ -163,12 +156,13 @@ section .one {
     justify-content: center;
 }
 
+.dog {
+    padding-right: 30px;
+}
+
 .pets {
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin-bottom: 30px;
-    background-color: white;
+    justify-content: space-between;
 }
 
 .pet-card {
@@ -206,6 +200,13 @@ section .one {
     background: #FDDCC4;
 }
 
+section.two {
+    padding-top: 80px;
+    background-color: #F6F6F6;
+    padding-bottom: 105px;
+    text-align: center;
+}
+
 .our {
     display: flex;
     flex-wrap: nowrap;
@@ -230,6 +231,7 @@ section .one {
 }
 
 .rest {
+    display: inline-block;
     background: #F1CDB3;
     border-radius: 100px;
     text-decoration: none;
@@ -238,9 +240,6 @@ section .one {
     font-size: 17px;
     letter-spacing: 0.06em;
     color: #292929;
-    width: 117px;
-    height: 22px;
-    margin-left: 469px;
     margin-top: 60px;
 }
 
@@ -249,17 +248,19 @@ section .one {
 }
 
 .group {
-    padding-top: 182px;
     text-align: center;
     left: 446px;
-    padding-bottom: 20px;
 }
 
 .four {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 80px;
+}
+
+section.three {
+    padding-top: 80px;
+    padding-bottom: 98px;
 }
 
 .help {
@@ -291,7 +292,10 @@ section .one {
 
 .dog img {
     width: 505px;
-    height: 261px;
+}
+
+.about-dog {
+    max-width: 380px;
 }
 
 .about-dog h1 {
@@ -300,6 +304,7 @@ section .one {
     letter-spacing: 0.06em;
     color: #545454;
     width: 300px;
+    margin-bottom: 20px;
 }
 
 .about-dog h2 {
@@ -307,7 +312,6 @@ section .one {
     font-size: 15px;
     letter-spacing: 0.06em;
     color: #545454;
-    padding-top: 20px;
 }
 
 .card {
@@ -322,7 +326,13 @@ section .one {
     font-size: 12px;
     color: #B2B2B2;
     padding-top: 20px;
-    width: 380px;
+    width: 380;
+}
+
+section.four {
+    background-color: #F6F6F6;
+    padding-top: 80px;
+    padding-bottom: 111px;
 }
 
 footer {
@@ -372,4 +382,114 @@ footer .tel {
 footer .local {
     background: url(./img/marker.svg) no-repeat left center;
     padding-left: 42px;
+}
+
+@media(max-width:1200px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+@media(max-width:1024px) {
+    .woody {
+        display: none;
+    }
+}
+
+@media(max-width:990px) {
+    .one .puppy {
+        display: none;
+    }
+    .make-friend {
+        margin-bottom: 50px;
+    }
+}
+
+@media(max-width:980px) {
+    .pets-nav-button {
+        display: none;
+    }
+    .pet-card {
+        display: none;
+    }
+    .container.flex-wrapper.one {
+        display: block;
+        text-align: center;
+        max-width: 50%;
+    }
+}
+
+@media(max-width:900px) {
+    .about-shelter {
+        margin-top: 20px;
+    }
+    .about-don {
+        margin-top: 20px;
+    }
+    .five {
+        margin-top: 0;
+    }
+}
+
+@media(max-width:880px) {
+    .flex-wrapper {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media(max-width:750px) {
+    nav {
+        display: none;
+    }
+    .menu {
+        display: inline-block;
+        width: 30px;
+    }
+    .jennifer {
+        display: none;
+    }
+}
+
+@media(max-width:600px) {
+    .about {
+        display: none;
+    }
+    .don {
+        display: none;
+    }
+}
+
+@media(max-width:550px) {
+    .people h1 {
+        font-size: 37px;
+        width: 250px;
+    }
+    .people p {
+        width: 300px;
+    }
+    .about-shelter h1 {
+        width: 250px;
+    }
+    .about-shelter p {
+        width: 300px;
+    }
+    .friend {
+        font-size: 25px;
+    }
+    .pic {
+        padding-bottom: 50px;
+    }
+    .about-dog {
+        width: 300px;
+    }
+    .about-dog p {
+        width: 300px;
+    }
+}
+
+@media(max-width:400px) {
+    .pets {
+        width: 100%;
+    }
 }
